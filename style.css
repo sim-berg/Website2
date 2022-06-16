@@ -6,19 +6,14 @@
 }
 body {
 
-  background-color:rgb(156, 242, 215);
+  background-color: #3EEEB4;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 200 200'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='100' y1='33' x2='100' y2='-3'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3ClinearGradient id='b' gradientUnits='userSpaceOnUse' x1='100' y1='135' x2='100' y2='97'%3E%3Cstop offset='0' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg fill='%2300c992' fill-opacity='0.6'%3E%3Crect x='100' width='100' height='100'/%3E%3Crect y='100' width='100' height='100'/%3E%3C/g%3E%3Cg fill-opacity='0.5'%3E%3Cpolygon fill='url(%23a)' points='100 30 0 0 200 0'/%3E%3Cpolygon fill='url(%23b)' points='100 100 0 130 0 100 200 100 200 130'/%3E%3C/g%3E%3C/svg%3E");
   
 
 
 }
 
 
-.first ,.second ,.third{
-
-
-
-
-}
 
 .third{
 
@@ -28,18 +23,27 @@ margin-top: 10%;
 
 .header{
   color:rgb(46, 82, 43);
-  padding: 5px;
+  padding: 10px;
 
 }
 .header h1{
 
   font-size: 2em;
+  margin-bottom: 5%;
   
 
 }
 
 
+.htext{
 
+  border: 1px solid black;
+  background-color: rgb(242, 223, 202);
+  padding: 10px;
+  font-weight: 500;
+  width: 80%;
+  margin-left: 7%;
+}
 
 
 .ebay {
@@ -57,6 +61,7 @@ margin-top: 10%;
   font-size: 2em;
   color: rgb(221, 176, 62);
   font-weight: 600;
+  box-shadow: 0 0 4px #999;
 }
 
 .ebaylink{
@@ -71,7 +76,7 @@ margin-top: 10%;
  align-items: center;
  justify-content: center;
  background:rgb(230, 230, 230);
- width: 50%;
+ width: 80%;
  border-radius: .25em;
  font-size: 1rem;
  padding: .25em;
@@ -85,15 +90,14 @@ margin-top: 10%;
  
  .name ,.email{
  
-     width: 40%;
+     width: 50%;
  }
  
  .contactbutton {
-  border: none;
+  border: 1 solid black;
   border-radius: 2px;
   padding: 12px 18px;
   font-size: 16px;
-  text-transform: uppercase;
   cursor: pointer;
   color: white;
   background-color: #2196f3;
@@ -111,6 +115,20 @@ margin-top: 10%;
 }
 
 
+
+
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+.ripple:active {
+  background-color: #6eb9f7;
+  background-size: 100%;
+  transition: background 0s;
+}
 
 
 
@@ -256,3 +274,52 @@ opacity: 1;
 
 
 input:checked + .slide-container .nav label { display: block; }
+
+
+@media  screen and (min-width: 900px) {
+   
+
+  .carousel{
+
+    width: 600px;
+    margin-top: 5%;
+
+  }
+    
+  .header{
+
+    margin-left: 7%;
+
+  }
+
+  .ebay{
+
+    width: 780px;
+  }
+
+  .ctext{
+    margin-top: -50px;
+    margin-bottom: 30px;
+
+
+  }
+
+  .name ,.email,.message{
+
+    width: 400px;
+
+
+
+  }
+  .message{
+    width: 780px;
+
+  }
+  .htext{
+    margin-left: 0%;
+    width: 550px;
+  }
+}
+
+
+
